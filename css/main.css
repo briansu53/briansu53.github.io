@@ -214,6 +214,24 @@ a {
 /* .skill_wrap .section .text_content p {
   font-weight: 600;
 } */
+
+.skill_circle{
+  display: flex;
+}
+.skill_circle .circle{
+  width:50px;
+  height: 50px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.skill_circle .circle span{
+  font-weight: 600;
+  color: #ffffff;
+}
+
+
 .skill_wrap .section .btn_list{
   width: 300px;
   display: flex;
@@ -334,7 +352,6 @@ a {
 .portfolio_wrap .info .content_wrap{ 
   display: flex;
   justify-content: space-evenly;
-  align-items: center;
   flex-wrap: wrap;
 }
 .portfolio_wrap .info .close {
@@ -355,10 +372,27 @@ a {
 }
 .portfolio_wrap .info .tag{
   display: flex;
+  justify-content: center;
+  align-items: center;
 }
 .portfolio_wrap .info .tag .circle{
   width:50px;
   height: 50px;
   border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
-
+.portfolio_wrap .info .tag .circle span{
+  font-weight: 600;
+  color: #ffffff;
+}
+.portfolio_wrap .info .content .spotlight i{
+  font-size: 15px;
+  font-weight: 600;
+  color: #013660;
+}
+.portfolio_wrap .info .content .spotlight span{
+  font-weight: 600;
+  margin-left: 5px;
+}
