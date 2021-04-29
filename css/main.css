@@ -53,6 +53,7 @@ body {
 .index_wrap .img_color_wrap:hover {
   background-color:#E83B4F;  
 }
+
 .index_wrap .img_wrap img {
   width: 80%;
   border-radius: 25px;
@@ -119,6 +120,10 @@ body {
   font-size: 4.5rem;
   margin: 15px;
   color: #D5E2E8;
+  transition: 0.70s;
+}
+.section_intro .text_card .card i:hover{
+  transform: rotate(15deg);
 }
 .section_intro .text_card .card .btn{
   width: 100%;
@@ -233,6 +238,7 @@ a {
   display: flex;
   flex-direction: column;
   align-items: center;
+  justify-content: space-evenly;
   padding: 10px 5px;
   margin: 10px 0px;
   border-radius: 25px;
@@ -245,12 +251,13 @@ a {
   justify-content: center;
   align-items: center;
   text-align: center;
-  margin: 20px;
+  margin-top: 20px;
   color: #5F819D;
 }
 .skill_wrap .section .text_content {
   display: flex;
   flex-direction: column;
+  justify-content: center;
   padding: 5px 10px;
   border-radius: 25px;
   font-size: 20px;
