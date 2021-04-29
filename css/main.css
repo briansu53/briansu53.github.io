@@ -80,6 +80,47 @@ body {
   border-radius: 50%;
   background-color: crimson;
 }
+/* 文字輪播 */
+.index_wrap .words {
+  font-size: 35px;
+  font-weight: 600;
+  color: #D5E2E8;
+}
+.index_wrap .words span {
+  position: absolute;
+  opacity: 0;
+  animation: animate 12s linear infinite;
+  color: #D5E2E8;
+  white-space: nowrap;
+}
+.index_wrap .words span:nth-child(2) {animation-delay: 2s;}
+.index_wrap .words span:nth-child(3) {animation-delay: 4s;}
+.index_wrap .words span:nth-child(4) {animation-delay: 6s;}
+.index_wrap .words span:nth-child(5) {animation-delay: 8s;}
+.index_wrap .words span:nth-child(6) {animation-delay: 10s;}
+
+@keyframes animate {
+  0% {
+      opacity: 0;
+      transform: translateY(-50px);
+  }
+  2% {
+      opacity: 1;
+      transform: translateY(0);
+  }
+  10% {
+      opacity: 1;
+      transform: translateY(0);
+  }
+  12% {
+      opacity: 0;
+      transform: translateY(50px);
+  }
+  100% {
+      opacity: 0;
+      transform: translateY(50px);
+  }
+}
 
 /* 動畫 */
 #ani_name{
@@ -91,7 +132,7 @@ body {
 }
 @keyframes runningName {
   0%   {left:0px;}
-  50%  {left:20px;}
+  50%  {left:10px;}
   100% {left:0px;}
 }
 .section_intro .text_box .circle p{
@@ -463,8 +504,12 @@ a {
   .index_wrap {
     flex-direction: column-reverse
   }
+  .section_intro {
+    width: 100%;
+    margin-top: 50px;
+  }
   .section_image {
-    width: 60%;
+    width: 90%;
     margin: 50px;
   }
   .section_intro {
@@ -481,9 +526,15 @@ a {
 
 }
 @media (max-width: 759px) {
-
+  .index_wrap .words {
+    font-size: 30px;
+  }
 }
 @media (max-width: 480px) {
+  #ani_name{font-size: 45px;}
+  .index_wrap .words {
+    font-size: 25px;
+  }
   .section_intro .text_box .circle {
     width: 350px;
     height: 350px;
