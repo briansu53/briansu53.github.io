@@ -215,7 +215,7 @@ body {
   border-radius: 25px;
 }
 .basic_wrap .basic_section .btn_list{
-  width: 300px;
+  width: 350px;
   display: flex;
   justify-content: space-around;
   margin: 10px 5px;
@@ -323,7 +323,7 @@ a {
 
 
 .skill_wrap .section .btn_list{
-  width: 300px;
+  width: 350px;
   display: flex;
   justify-content: space-around;
   margin: 10px 5px;
@@ -347,7 +347,97 @@ a {
 .skill_wrap .section .btn_list .btn:hover{
   transform: translateY(-15%);
 }
+/* headhunter page */
+.kill_wrap {
+  margin: 25px;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  align-items: center;
+}
+.kill_wrap .section_title{
+  display: flex;
+  align-items: center;
+}
+.kill_wrap .section {
+  background-color: #D5E2E8;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  /* align-items: center; */
+  justify-content: space-evenly;
+  padding: 10px 5px;
+  margin: 10px 0px;
+  border-radius: 25px;
+}
+.kill_wrap .section i {
+  color:  #E83B4F;
+}
+.kill_wrap .section h2{
+  margin: 0;
+  color: #001036;
+}
+ 
+.kill_wrap .section h4{
+  margin: 0;
+  color: #5F819D;
+}
 
+.kill_wrap .section .text_content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 5px 10px;
+  border-radius: 25px;
+  font-size: 20px;
+  color: #013660;
+  line-height: 1.8rem;
+}
+.kill_wrap .section .text_content p{
+  margin: 0;
+}
+
+.kill_circle{
+  display: flex;
+}
+.kill_circle .circle{
+  width:50px;
+  height: 50px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.kill_circle .circle span{
+  font-weight: 600;
+  color: #ffffff;
+}
+
+
+.kill_wrap .section .btn_list{
+  width: 350px;
+  display: flex;
+  justify-content: space-around;
+  margin: 10px 5px;
+}
+.kill_wrap .section .btn_list i{
+  font-size: 40px;
+}
+.kill_wrap .section .btn_list .btn{
+  height: 25px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #E83B4F;
+  padding: 10px;
+  border-radius: 10px;
+  font-weight: 600;
+  color: #D5E2E8;
+  cursor: pointer;
+  transition: 0.5s linear;
+}
+.kill_wrap .section .btn_list .btn:hover{
+  transform: translateY(-15%);
+}
 /* portfolio.html */
 .portfolio_wrap {
   display: flex;
@@ -378,7 +468,7 @@ a {
 }
 
 .portfolio_wrap .first .btn_list{
-  width: 300px;
+  width: 350px;
   display: flex;
   justify-content: space-around;
   margin: 10px 5px;
